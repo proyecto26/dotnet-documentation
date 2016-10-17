@@ -12,7 +12,7 @@ SOLID, DI, N-Tier, Logs
 # Domain Layer
 The logic of the business, is a model of business. The rules and needs of the business with the workflow.
 Domain Layer is all about the business problem - so keep ti "pure" (Only C# classes, methods, properties, interfaces, enums), free of specific technologies, API's, libraries, frameworks, etc.
-The Domain Layer is the main unifying concept of the application... bridging  technical concepts and business concepts. Starting with the Domain Layer help us utilize Test Driven Development.
+The Domain Layer is the main unifying concept of the application... bridging  technical concepts and business concepts. Starting with the Domain Layer help us utilize Test Driven Development. Not every application needs the complexity introduced by a domain layer.
 
 
 # Presentation Layer
