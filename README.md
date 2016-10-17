@@ -2,7 +2,7 @@
 SOLID, DI, N-Tier, Logs
 
 # Tools
-* **[ASP.NET Dynamic Data](https://msdn.microsoft.com/en-us/library/ee845452.aspx)**: Dynamic Data enables you to create a data-driven Web site with little or no coding.
+* **[ASP.NET Dynamic Data](https://msdn.microsoft.com/en-us/library/ee845452.aspx)**: Dynamic Data enables you to create a data-driven Web site with little or no coding (Only a simple CRUD).
 
 # Layered Architectural Pattern (separation of concerns)
 * Layered Architectures keep the Software flexible, more resilient to change.
@@ -14,8 +14,8 @@ The logic of the business, is a model of business. The rules and needs of the bu
 Domain Layer is all about the business problem - so keep ti "pure" (Only C# classes, methods, properties, interfaces, enums), free of specific technologies, API's, libraries, frameworks, etc.
 The Domain Layer is the main unifying concept of the application... bridging  technical concepts and business concepts. Starting with the Domain Layer help us utilize Test Driven Development. Not every application needs the complexity introduced by a domain layer.
 
-
 # Presentation Layer
+UI Components and Process Components. It should do basic/simple formatting and validation. Also responsible for displaying exceptions, asking for user input on what to do next
 
 # Persistence Layer
 
