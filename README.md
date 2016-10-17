@@ -30,3 +30,6 @@ SOLID, DI, N-Tier, Logs
 * **TDD:** Test Driven Design.
 * **DDD:** Domain Driven Design.
 * **Architecture:** Application architecture seeks to build a bridge between business requirements and technical requirements by understanding use cases, and then finding ways to implement those use cases in the software.
+* **Single responsibility principle:** every module or class should have responsibility over a single part of the functionality provided by the software, and that responsibility should be entirely encapsulated by the class. "A class should have only one reason to change".
+* **SOLID:** single responsibility, open-closed, Liskov substitution, interface segregation and dependency inversion. The intention is that these principles, when applied together, will make it more likely that a programmer will create a system that is easy to maintain and extend over time.
+
