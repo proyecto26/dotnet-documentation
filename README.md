@@ -28,3 +28,4 @@ SOLID, DI, N-Tier, Logs
 * **Cross-cutting concerns:** are aspects of a program that affect other concerns.
 * **DDD:** Domain Driven Design.
 * **DRY:** Don't repeat yourself. "Every piece of knowledge must have a single, unambiguous, authoritative representation within a system". 
+* **YAGNI:** You aren't gonna need it. "Always implement things when you actually need them, never when you just foresee that you need them".
