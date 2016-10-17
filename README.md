@@ -10,6 +10,7 @@ SOLID, DI, N-Tier, Logs
 * Allow you to change how you package and deploy your application.
 
 # Domain Layer
+The logic of the business.
 
 # Presentation Layer
 
