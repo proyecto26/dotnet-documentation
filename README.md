@@ -29,3 +29,4 @@ SOLID, DI, N-Tier, Logs
 * **YAGNI:** You aren't gonna need it. "Always implement things when you actually need them, never when you just foresee that you need them".
 * **TDD:** Test Driven Design.
 * **DDD:** Domain Driven Design.
+* **Architecture:** Application architecture seeks to build a bridge between business requirements and technical requirements by understanding use cases, and then finding ways to implement those use cases in the software.
