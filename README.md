@@ -24,7 +24,6 @@ SOLID, DI, N-Tier, Logs
 # Concepts
 * **Layers:** are about logical organization of code.
 * **Tiers:** are the physical deployment of layers (only about where the code runs).
-* **DRY:** Don't repeat yourself. "Every piece of knowledge must have a single, unambiguous, authoritative representation within a system".
 * **Cross-cutting concerns:** are aspects of a program that affect other concerns.
 * **DDD:** Domain Driven Design.
 * **DRY:** Don't repeat yourself. "Every piece of knowledge must have a single, unambiguous, authoritative representation within a system". 
