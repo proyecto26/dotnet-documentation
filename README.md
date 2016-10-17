@@ -10,7 +10,10 @@ SOLID, DI, N-Tier, Logs
 * Allow you to change how you package and deploy your application.
 
 # Domain Layer
-The logic of the business.
+The logic of the business, is a model of business. The rules and needs of the business with the workflow.
+Domain Layer is all about the business problem - so keep ti "pure" (Only C# classes, methods, properties, interfaces, enums), free of specific technologies, API's, libraries, frameworks, etc.
+The Domain Layer is the main unifying concept of the application... bridging  technical concepts and business concepts. Starting with the Domain Layer help us utilize Test Driven Development.
+
 
 # Presentation Layer
 
@@ -25,7 +28,7 @@ The logic of the business.
 # Concepts
 * **Layers:** are about logical organization of code.
 * **Tiers:** are the physical deployment of layers (only about where the code runs).
-* **Cross-cutting concerns:** are aspects of a program that affect other concerns.
+* **Cross-cutting concerns:** are aspects of a program that affect other concerns (Security, Communication, Operational Management, etc).
 * **DRY:** Don't repeat yourself. "Every piece of knowledge must have a single, unambiguous, authoritative representation within a system". 
 * **YAGNI:** You aren't gonna need it. "Always implement things when you actually need them, never when you just foresee that you need them".
 * **TDD:** Test Driven Design.
