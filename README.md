@@ -32,9 +32,17 @@ Object Relation Mappers are used to mapping relational data to object instances.
 Application Services layer orchestrates lower-level, chattier methods to solve higher-level domain-specific problems. Focus on have Cohesive methods and classes adhere to SRP and DRY.
 The Application Services Layer has methods that serve the Presentation Layer by rolling-up many lower-level methods into fewer higher-level methods, orchestrating those lower-lever methods to coordinate/collaborate a solution.
 
-# Web Services Layer
+# Web Services Layer (WCF or ASP.NET Web API)
+Serialize types for transmit over the network. The role of a Web Services layer is to expose web-callable methods to a client application. Web Service methods expose functionality of the Domain Layer of Application Services Layer.
 
 # Data Transfer Objects
+Consider consolidating data structures that are passed between layers and tiers. Reduce round-trips between layers and tiers.
+The Persistence Layer use DBSet entities, The Domain Layer use Domain Classes and the Presentation Layer use View Model.
+With AutoMapper we mapping object instances in a layer to Data Transfer Objects, it assumes convention of property names being called the same, but there´s a way to "hand-roll the mapping", too.
+  
+  Using DTOs we can:
+  * Reduce chatter between tiers.
+  * Avoid leaky abstractions.
 
 # Concepts
 * **Layers:** are about logical organization of code.
