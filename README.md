@@ -51,10 +51,15 @@ We can identify 3 rules:
 - Third-party injector that supplies instances of classes that adhere to the contract to the dependent consumer.
 
 Exist the following principles:
- * Dependency Inversion Principle
+ * Dependency Inversion Principle:
+   - High-level modules should not depend on low-level modules. Both should depend on abstractions.
+   - Abstractions should not depend on details. Details should depend on abstractions.
  * Inversion of Control Principle (Controls the flow of the program)
  
 We need to configure the **DI Container** in the "Application Root"... simply, an area of the application that executes very early on.
+
+# SOLID
+The **SOLID** Principles are a set of guidelines to help Agile developers build more maintainable and extensible object-oriented applications.
 
 # Concepts
 * **Layers:** are about logical organization of code.
