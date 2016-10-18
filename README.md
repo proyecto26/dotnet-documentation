@@ -44,6 +44,18 @@ With AutoMapper we mapping object instances in a layer to Data Transfer Objects,
   * Reduce chatter between tiers.
   * Avoid leaky abstractions.
 
+# Dependency Injection Pattern (Unity, Castle Windsor, Ninject, Autofac, StructureMap, etc)
+We can identify 3 rules: 
+- A consumer that depends on other classes for some service.
+- A declaration of that consumer's need (in the form of a contract/interface).
+- Third-party injector that supplies instances of classes that adhere to the contract to the dependent consumer.
+
+Exist the following principles:
+ * Dependency Inversion Principle
+ * Inversion of Control Principle (Controls the flow of the program)
+ 
+We need to configure the **DI Container** in the "Application Root"... simply, an area of the application that executes very early on.
+
 # Concepts
 * **Layers:** are about logical organization of code.
 * **Tiers:** are the physical deployment of layers (only about where the code runs).
