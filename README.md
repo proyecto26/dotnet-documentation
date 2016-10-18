@@ -59,7 +59,7 @@ We need to configure the **DI Container** in the "Application Root"... simply, a
 # Concepts
 * **Layers:** are about logical organization of code.
 * **Tiers:** are the physical deployment of layers (only about where the code runs).
-* **Cross-cutting concerns:** are aspects of a program that affect other concerns (Security, Communication, Operational Management, etc).
+* **Cross-cutting concerns:** are aspects of a program that affect other concerns (Security, Communication, Operational Management, Handling, Logging, Validation, Instrumentation, etc).
 * **DRY:** Don't repeat yourself. "Every piece of knowledge must have a single, unambiguous, authoritative representation within a system".
 * **SRP:** Single responsibility principle. Every module or class should have responsibility over a single part of the functionality provided by the software, and that responsibility should be entirely encapsulated by the class. "A class should have only one reason to change".
 * **YAGNI:** You aren't gonna need it. "Always implement things when you actually need them, never when you just foresee that you need them".
