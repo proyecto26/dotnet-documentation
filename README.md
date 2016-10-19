@@ -61,6 +61,9 @@ We need to configure the **DI Container** in the "Application Root"... simply, a
 # SOLID
 The **SOLID** Principles are a set of guidelines to help Agile developers build more maintainable and extensible object-oriented applications.
 
+# Design Patterns with GoF (Gang of Four - Erich Gamma, Richard Helm, Ralph Johnson and John Vlissides)
+Describe the common patterns to solve common problems.
+
 # Concepts
 * **Layers:** are about logical organization of code.
 * **Tiers:** are the physical deployment of layers (only about where the code runs).
