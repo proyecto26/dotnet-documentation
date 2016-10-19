@@ -79,7 +79,7 @@ They are categorized in three groups:
   - **Decorator:** Attach additional responsibilities to an object dynamically keeping the same interface. Decorators provide a flexible alternative to subclassing for extending functionality.
   - **Facade:** Create a simplified interface of an existing interface to ease usage for common tasks.
 
-* Behavioral patterns:
+* **Behavioral patterns:**
   Define communication between system objects and the flow of information between them. For example:
   - **Observer:** Define a one-to-many dependency between objects where a state change in one object results in all its dependents being notified and updated automatically.
   - **Strategy:** Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
