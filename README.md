@@ -62,7 +62,28 @@ We need to configure the **DI Container** in the "Application Root"... simply, a
 The **SOLID** Principles are a set of guidelines to help Agile developers build more maintainable and extensible object-oriented applications.
 
 # Design Patterns with GoF (Gang of Four - Erich Gamma, Richard Helm, Ralph Johnson and John Vlissides)
-Describe the common patterns to solve common problems.
+Describe the common patterns to solve common problems. A pattern is a general reusable solution to a commonly occurring problem within a given context in software design.
+
+They are categorized in three groups: 
+
+* **Creational patterns:**
+  Define the best way in which an object is instantiated. The aim of these patterns is to abstract the instantiation process and hide the details of how objects are created and initialized. For example:
+  - **Factory method:** Centralize creation of an object of a specific type choosing one of several implementations.
+  - **Lazy initialization:** Tactic of delaying the creation of an object, the calculation of a value, or some other expensive process until the first time it is needed.
+  - **Prototype:** Used when the type of objects to create is determined by a prototypical instance, which is cloned to produce new objects.
+  - **Singleton:** Restrict instantiation of a class to one object.
+  
+* **Structural patterns:**
+  Create groups of objects to help us perform complex tasks. For example:
+  - **Adapter:** Convert the interface of a class into another interface clients expect. An adapter lets classes work together that could not otherwise because of incompatible interfaces.
+  - **Decorator:** Attach additional responsibilities to an object dynamically keeping the same interface. Decorators provide a flexible alternative to subclassing for extending functionality.
+  - **Facade:** Create a simplified interface of an existing interface to ease usage for common tasks.
+
+* Behavioral patterns:
+  Define communication between system objects and the flow of information between them. For example:
+  - **Observer:** Define a one-to-many dependency between objects where a state change in one object results in all its dependents being notified and updated automatically.
+  - **Strategy:** Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
+  - **Iterator:** Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
 
 # Concepts
 * **Layers:** are about logical organization of code.
