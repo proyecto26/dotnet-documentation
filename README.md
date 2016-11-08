@@ -11,7 +11,7 @@ SOLID, DI, N-Tier, Logs
     - Uninstall-Package EntityFramework
     - Update-Package Entity Framework -reinstall (all projects)
     - Update-Package EntityFramework -ProjectName MyProject
-* **Entity Framework**: ORM by Microsoft.
+* **Entity Framework**: an ORM by Microsoft.
   * Viewing queries:
     - context.Database.Log = s => Console.WriteLine(s); //Using System.Diagnostics.Debug
     - Glimpse packgage
