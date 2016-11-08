@@ -1,8 +1,16 @@
 # .Net Starter Template (to whom it may concern)
 SOLID, DI, N-Tier, Logs
 
+
+
 # Tools
 * **[ASP.NET Dynamic Data](https://msdn.microsoft.com/en-us/library/ee845452.aspx)**: Dynamic Data enables you to create a data-driven Web site with little or no coding (Only a simple CRUD).
+* **NuGet**: is a free and open-source package manager designed for the Microsoft development platform.
+  * Commands:
+    - Install-Package EntityFramework -Latest non-beta
+    - Uninstall-Package EntityFramework
+    - Update-Package Entity Framework -reinstall (all projects)
+    - Update-Package EntityFramework -ProjectName MyProject
 
 # Layered Architectural Pattern (separation of concerns)
 * Layered Architectures keep the Software flexible, more resilient to change.
