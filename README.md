@@ -15,7 +15,7 @@ SOLID, DI, N-Tier, Logs
   * Viewing queries:
     - context.Database.Log = s => Console.WriteLine(s); //Using System.Diagnostics.Debug
     - Glimpse packgage
-    - Interceptors //Using System.Data.Entity.Infrastructure.Interception.DatabaseLogger
+    - Interceptors in **.config** file //Using System.Data.Entity.Infrastructure.Interception.DatabaseLogger
 * **LocalDb**: a lightweight version of the SQL Server Express Database Engine.
   * Data source=(localdb)\mssqllocaldb;
   * Get versions / instances via:
