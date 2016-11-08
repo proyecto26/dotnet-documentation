@@ -11,6 +11,16 @@ SOLID, DI, N-Tier, Logs
     - Uninstall-Package EntityFramework
     - Update-Package Entity Framework -reinstall (all projects)
     - Update-Package EntityFramework -ProjectName MyProject
+* **Entity Framework**: ORM by Microsoft.
+  * Viewing queries:
+    - context.Database.Log = s => Console.WriteLine(s); //Using System.Diagnostics.Debug
+    - Glimpse packgage
+    - Interceptors //Using System.Data.Entity.Infrastructure.Interception.DatabaseLogger
+* **LocalDb**: a lightweight version of the SQL Server Express Database Engine.
+  * Data source=(localdb)\mssqllocaldb;
+  * Get versions / instances via:
+    - sqllocaldb i
+    - sqllocaldb v
 
 # Layered Architectural Pattern (separation of concerns)
 * Layered Architectures keep the Software flexible, more resilient to change.
