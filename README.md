@@ -105,4 +105,9 @@ They are categorized in three groups:
 * **Architecture:** Application architecture seeks to build a bridge between business requirements and technical requirements by understanding use cases, and then finding ways to implement those use cases in the software.
 * **Facade:** Common pattern name used to identify a thin layer of code that wraps around other code to present a "friendly" interface/interaction.
 * **SOLID:** single responsibility, open-closed, Liskov substitution, interface segregation and dependency inversion. The intention is that these principles, when applied together, will make it more likely that a programmer will create a system that is easy to maintain and extend over time.
+* **POCO:** Plain Old CLR Object. Identify an object as a simple object, as opposed to the complicated. Some benefits of POCO objects are:
+  - Allows a simple storage mechanism for data, and simplifies serialization/passing data through layers.
+  - Goes hand-in-hand with dependency injection, and the repository pattern.
+  - Minimized complexity and dependencies on other layers (higher layers only care about the POCOs, POCOs don't care about anything) which facilitates loose coupling.
+  - Increases testability through simplification.
 
