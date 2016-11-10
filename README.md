@@ -16,6 +16,12 @@ SOLID, DI, N-Tier, Logs
     - context.Database.Log = s => Console.WriteLine(s); //Using System.Diagnostics.Debug
     - Glimpse packgage
     - Interceptors in **.config** file //Using System.Data.Entity.Infrastructure.Interception.DatabaseLogger
+  * Database Control:
+    - Data annotations (Attributes)  //Using System.ComponentMode.DataAnnotations
+    - Fluent API
+  * Commands:
+    - Enable-Migrations -ContextTypeName NameSpace.MyClassDataContext -EnableAutomaticMigrations //Update the database with the code
+    - Update-Database -Script
 * **LocalDb**: a lightweight version of the SQL Server Express Database Engine.
   * Data source=(localdb)\mssqllocaldb;
   * Get versions / instances via:
