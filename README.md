@@ -22,6 +22,10 @@ SOLID, DI, N-Tier, Logs
   * Commands:
     - Enable-Migrations -ContextTypeName NameSpace.MyClassDataContext -EnableAutomaticMigrations //Update the database with the code
     - Update-Database -Script
+  * Database Initializers:
+    - CreateDatabaseIfNotExists
+    - DropCreateDatabaseWhenModelChanges
+    - DropCreateDatabaseAlways
 * **LocalDb**: a lightweight version of the SQL Server Express Database Engine.
   * Data source=(localdb)\mssqllocaldb;
   * Get versions / instances via:
