@@ -21,8 +21,11 @@ SOLID, DI, N-Tier, Logs
     - Glimpse packgage
     - Interceptors in **.config** file //Using System.Data.Entity.Infrastructure.Interception.DatabaseLogger
   * Database Control:
-    - Data annotations (Attributes)  //Using System.ComponentMode.DataAnnotations
-    - Fluent API
+    - Data annotations (Attributes):
+      - Integrates with MVC validation.
+    - Fluent API:
+      - Keeps domain classes clean.
+      - More supported operations (advanced mappings, datetime precision, fixed length and non-Unicode strings, etc).
   * Commands:
     - Enable-Migrations -ContextTypeName NameSpace.MyClassDataContext -EnableAutomaticMigrations //Update the database with the code
     - Update-Database -Script
