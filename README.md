@@ -1,6 +1,10 @@
 # .Net Starter Template (to whom it may concern)
 SOLID, DI, N-Tier, Logs
 
+# C Sharp - C# language
+
+* **Modifiers:**
+  - **virtual**: A method, property, indexer or event declaration can be overridden by any derived class. (Useful to support lazy loading with **Entity Framework**).  
 
 
 # Tools
