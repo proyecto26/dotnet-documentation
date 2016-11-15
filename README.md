@@ -26,6 +26,10 @@ SOLID, DI, N-Tier, Logs
     - Fluent API:
       - Keeps domain classes clean.
       - More supported operations (advanced mappings, datetime precision, fixed length and non-Unicode strings, etc).
+      - Easily remapping legacy names  to code names.
+      - Single type to multiple tables, vice versa.
+      - Schema mapping.
+      - Mapping table per type, table per class, entity & table splitting.
   * Commands:
     - Enable-Migrations -ContextTypeName NameSpace.MyClassDataContext -EnableAutomaticMigrations //Update the database with the code
     - Update-Database -Script
