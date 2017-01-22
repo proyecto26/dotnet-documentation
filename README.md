@@ -44,6 +44,10 @@ ecuteNonQuery, BeginExecuteReader, BeginExecuteXmlReader)** that can greatly enh
 
 ## - Entity Framework
 An ORM created by Microsoft. It enables developers to manipulate data as domain-specific objects without regard to the underlying structure of the data store. You can find:
+  * Approaches:
+    - **Database First:** build a database and then create the conceptual model from it.
+    - **Model First:** building your conceptual model first and then letting the tools build out a database for you.
+    - **Code First:** create simple classes that represent entities.
   * Viewing queries:
     - context.Database.Log = s => Console.WriteLine(s); //Using System.Diagnostics.Debug
     - Glimpse packgage
