@@ -36,13 +36,14 @@ Support large loads and to excel at security, scalability, flexibility, and depe
 Components designed for fast data manipulation, for example:
   * **DbConnection**: Any database interaction. Take care, you need to close the connection...
   * **DbCommand**: Parameterization.
-  * **DbDataReader**: Provides read-only access to the data.
-  * **DbDataAdapter**: Populate a **DataSet** or **DataTable** using the Connection and the Command object.
-  * **DataSet**: A portion of **RDBMS** relevant to the application (a collection of DataTable objects,).
+  * **DbDataReader**: Provides read-only access to the data. It provide multiple asynchronous methods **(BeginEx-
+ecuteNonQuery, BeginExecuteReader, BeginExecuteXmlReader)** that can greatly enhance the user experience.
+  * **DbDataAdapter**: Populate only **DataSets** or **DataTables** using the Connection and the Command object.
+  * **DataSet**: A portion of **RDBMS** relevant to the application (a collection of DataTable objects). It can be loaded directly from **XML** documents and can be persisted to **XML** natively.
   * **DataTable**: A specific view of data (a table in the RDBMS, although only par-tially populated.).
 
 ## - Entity Framework
-An ORM by Microsoft. You can find:
+An ORM created by Microsoft. You can find:
   * Viewing queries:
     - context.Database.Log = s => Console.WriteLine(s); //Using System.Diagnostics.Debug
     - Glimpse packgage
