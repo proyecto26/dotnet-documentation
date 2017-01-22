@@ -1,5 +1,5 @@
 # .Net Starter Template (to whom it may concern)
-SOLID, DI, N-Tier, Logs
+SOLID, DI, N-Tier, Logs, etc.
 
 # C Sharp - C# language
 
@@ -39,7 +39,7 @@ Components designed for fast data manipulation, for example:
   * **DbDataReader**: Provides read-only access to the data. It provide multiple asynchronous methods **(BeginEx-
 ecuteNonQuery, BeginExecuteReader, BeginExecuteXmlReader)** that can greatly enhance the user experience.
   * **DbDataAdapter**: Populate only **DataSets** or **DataTables** using the Connection and the Command object.
-  * **DataSet**: A portion of **RDBMS** relevant to the application (a collection of DataTable objects). It can be loaded directly from **XML** documents and can be persisted to **XML** natively.
+  * **DataSet**: A portion of **RDBMS** relevant to the application (a collection of DataTable objects). It can be loaded directly from **XML** documents and can be persisted to **XML** natively (take care with the memory because it's an expensive object, so don't store it in **Session** or **Viewstate** variables).
   * **DataTable**: A specific view of data (a table in the RDBMS, although only par-tially populated.).
 
 ## - Entity Framework
