@@ -168,4 +168,4 @@ They are categorized in three groups:
 * **ORM:** Object-Relational Mapping.
 * **CSDL:** Conceptual Schema Definition Language.
 * **SSDL:** Store Schema Definition Language.
-* **MSL:** Mapping Specification Language. 
+* **MSL:** Mapping Specification Language (Handle the mapping between the CSDL and SSDL). It was used in older versions of **EF**.
