@@ -29,10 +29,10 @@ Support large loads and to excel at security, scalability, flexibility, and depe
   * **System.Data.OracleClient**
   * **System.Data.OleDb**
   * **System.Data.Odbc**
-  
- ![ADO.NET](images/adonet.png)
 
 ### .NET Framework data providers
+ ![ADO.NET](images/adonet.png)
+ 
 Components designed for fast data manipulation, for example:
   * **DbConnection**: Any database interaction. Take care, you need to close the connection...
   * **DbCommand**: Parameterization.
