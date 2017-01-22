@@ -15,7 +15,19 @@ SOLID, DI, N-Tier, Logs
     - Uninstall-Package EntityFramework
     - Update-Package Entity Framework -reinstall (all projects)
     - Update-Package EntityFramework -ProjectName MyProject
-* **Entity Framework**: an ORM by Microsoft.
+* **LocalDb**: a lightweight version of the SQL Server Express Database Engine.
+  * Data source=(localdb)\mssqllocaldb;
+  * Get versions / instances via:
+    - sqllocaldb i
+    - sqllocaldb v
+
+# Accessing data
+
+## - ADO.NET
+![ADO.NET](images/adonet.png)
+
+## - Entity Framework
+An ORM by Microsoft. You can find:
   * Viewing queries:
     - context.Database.Log = s => Console.WriteLine(s); //Using System.Diagnostics.Debug
     - Glimpse packgage
@@ -37,11 +49,6 @@ SOLID, DI, N-Tier, Logs
     - CreateDatabaseIfNotExists
     - DropCreateDatabaseWhenModelChanges
     - DropCreateDatabaseAlways
-* **LocalDb**: a lightweight version of the SQL Server Express Database Engine.
-  * Data source=(localdb)\mssqllocaldb;
-  * Get versions / instances via:
-    - sqllocaldb i
-    - sqllocaldb v
 
 # Layered Architectural Pattern (separation of concerns)
 * Layered Architectures keep the Software flexible, more resilient to change.
