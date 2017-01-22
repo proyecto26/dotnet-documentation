@@ -48,14 +48,15 @@ An ORM created by Microsoft. It enables developers to manipulate data as domain-
     - **Database First:** build a database and then create the conceptual model from it.
     - **Model First:** building your conceptual model first and then letting the tools build out a database for you.
     - **Code First:** create simple classes that represent entities.
-  * Viewing queries:
-    - context.Database.Log = s => Console.WriteLine(s); //Using System.Diagnostics.Debug
-    - Glimpse packgage
-    - Interceptors in **.config** file //Using System.Data.Entity.Infrastructure.Interception.DatabaseLogger
+  * Toolset:
+    - Entity Model Designer: Manipulate every aspect of the model using a **.edmx** file (Create, Delete or Update entities, associations, mappings and inheritance relationships).
+    - Entity Data Model Wizard: Build a conceptual model with an existing data store instance.
+    - Create Database Wizard: Build the database based on your conceptual model.
+    - Update Model Wizard: Update the mappings defined between the storage and the conceptual model
   * Database Control:
-    - Data annotations (Attributes):
+    - **Data annotations**:
       - Integrates with MVC validation.
-    - Fluent API:
+    - **Fluent API**:
       - Keeps domain classes clean.
       - More supported operations (advanced mappings, datetime precision, fixed length and non-Unicode strings, etc).
       - Easily remapping legacy names  to code names.
@@ -69,6 +70,10 @@ An ORM created by Microsoft. It enables developers to manipulate data as domain-
     - CreateDatabaseIfNotExists
     - DropCreateDatabaseWhenModelChanges
     - DropCreateDatabaseAlways
+  * Viewing queries:
+    - context.Database.Log = s => Console.WriteLine(s); //Using System.Diagnostics.Debug
+    - Glimpse packgage
+    - Interceptors in **.config** file //Using System.Data.Entity.Infrastructure.Interception.DatabaseLogger
 
 # Layered Architectural Pattern (separation of concerns)
 * Layered Architectures keep the Software flexible, more resilient to change.
