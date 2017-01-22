@@ -24,7 +24,22 @@ SOLID, DI, N-Tier, Logs
 # Accessing data
 
 ## - ADO.NET
-![ADO.NET](images/adonet.png)
+Support large loads and to excel at security, scalability, flexibility, and dependability. It has a bias toward a ***disconnected model*** (open a connection to the database, execute the command, and then close the connection as quickly as possible). It have the concept of **connection pooling** (manage the number of active connections for you). ADO.NET is its cross-platform compatibility:
+  * **System.Data.SqlClient**
+  * **System.Data.OracleClient**
+  * **System.Data.OleDb**
+  * **System.Data.Odbc**
+  
+ ![ADO.NET](images/adonet.png)
+
+### .NET Framework data providers
+Components designed for fast data manipulation, for example:
+  * **DbConnection**: Any database interaction. Take care, you need to close the connection...
+  * **DbCommand**: Parameterization.
+  * **DbDataReader**: Provides read-only access to the data.
+  * **DbDataAdapter**: Populate a **DataSet** or **DataTable** using the Connection and the Command object.
+  * **DataSet**: A portion of **RDBMS** relevant to the application (a collection of DataTable objects,).
+  * **DataTable**: A specific view of data (a table in the RDBMS, although only par-tially populated.).
 
 ## - Entity Framework
 An ORM by Microsoft. You can find:
