@@ -40,10 +40,10 @@ Components designed for fast data manipulation, for example:
 ecuteNonQuery, BeginExecuteReader, BeginExecuteXmlReader)** that can greatly enhance the user experience.
   * **DbDataAdapter**: Populate only **DataSets** or **DataTables** using the Connection and the Command object.
   * **DataSet**: A portion of **RDBMS** relevant to the application (a collection of DataTable objects). It can be loaded directly from **XML** documents and can be persisted to **XML** natively (take care with the memory because it's an expensive object, so don't store it in **Session** or **Viewstate** variables).
-  * **DataTable**: A specific view of data (a table in the RDBMS, although only par-tially populated.).
+  * **DataTable**: A specific view of data (a table in the RDBMS, although only par-tially populated).
 
 ## - Entity Framework
-An ORM created by Microsoft. You can find:
+An ORM created by Microsoft. It enables developers to manipulate data as domain-specific objects without regard to the underlying structure of the data store. You can find:
   * Viewing queries:
     - context.Database.Log = s => Console.WriteLine(s); //Using System.Diagnostics.Debug
     - Glimpse packgage
@@ -164,4 +164,8 @@ They are categorized in three groups:
   - Goes hand-in-hand with dependency injection, and the repository pattern.
   - Minimized complexity and dependencies on other layers (higher layers only care about the POCOs, POCOs don't care about anything) which facilitates loose coupling.
   - Increases testability through simplification.
-
+* **LINQ:** Language Integrated Query.
+* **ORM:** Object-Relational Mapping.
+* **CSDL:** Conceptual Schema Definition Language.
+* **SSDL:** Store Schema Definition Language.
+* **MSL:** Mapping Specification Language. 
