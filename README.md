@@ -178,3 +178,4 @@ They are categorized in three groups:
 * **CSDL:** Conceptual Schema Definition Language.
 * **SSDL:** Store Schema Definition Language.
 * **MSL:** Mapping Specification Language (Handle the mapping between the CSDL and SSDL). It was used in older versions of **EF**.
+* **T4:**  is the templating and code generation engine that **EF** uses to generate code. T4 text template files can often be identified by the **.tt** extension.
