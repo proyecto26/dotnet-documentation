@@ -6,7 +6,6 @@ SOLID, DI, N-Tier, Logs, etc.
 * **Modifiers:**
   - **virtual**: A method, property, indexer or event declaration can be overridden by any derived class. (Useful to support lazy loading with **Entity Framework**).  
 
-
 # Tools
 * **[ASP.NET Dynamic Data](https://msdn.microsoft.com/en-us/library/ee845452.aspx)**: Dynamic Data enables you to create a data-driven Web site with little or no coding (Only a simple CRUD).
 * **NuGet**: is a free and open-source package manager designed for the Microsoft development platform.
