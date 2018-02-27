@@ -164,6 +164,7 @@ They are categorized in three groups:
 * **YAGNI:** You aren't gonna need it. "Always implement things when you actually need them, never when you just foresee that you need them".
 * **TDD:** Test Driven Design.
 * **DDD:** Domain Driven Design.
+* **Ubiquitous Language:** Define common terms with a common understanding and be constantly reused. Help the communication between Domain experts and the Development team.
 * **Architecture:** Application architecture seeks to build a bridge between business requirements and technical requirements by understanding use cases, and then finding ways to implement those use cases in the software.
 * **Facade:** Common pattern name used to identify a thin layer of code that wraps around other code to present a "friendly" interface/interaction.
 * **SOLID:** single responsibility, open-closed, Liskov substitution, interface segregation and dependency inversion. The intention is that these principles, when applied together, will make it more likely that a programmer will create a system that is easy to maintain and extend over time.
