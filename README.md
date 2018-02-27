@@ -170,6 +170,7 @@ They are categorized in three groups:
 * **TDD:** Test Driven Design.
 * **DDD:** Domain Driven Design.
 * **Ubiquitous Language:** Define common terms with a common understanding and be constantly reused. Help the communication between Domain experts and the Development team.
+* **CQRS:** Command and Query Responsibility Segregation is a pattern that segregates the operations that read data (queries) from the operations that update data (commands) by using separate interfaces.
 * **Architecture:** Application architecture seeks to build a bridge between business requirements and technical requirements by understanding use cases, and then finding ways to implement those use cases in the software.
 * **Facade:** Common pattern name used to identify a thin layer of code that wraps around other code to present a "friendly" interface/interaction.
 * **SOLID:** The intention is that these principles, when applied together, will make it more likely that a programmer will create a system that is easy to maintain and extend over time.
