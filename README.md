@@ -130,6 +130,11 @@ We need to configure the **DI Container** in the "Application Root"... simply, a
 
 # SOLID
 The **SOLID** Principles are a set of guidelines to help Agile developers build more maintainable and extensible object-oriented applications.
+- Single responsibility
+- Open-closed
+- Liskov substitution
+- Interface segregation
+- Dependency inversion
 
 # Design Patterns with GoF (Gang of Four - Erich Gamma, Richard Helm, Ralph Johnson and John Vlissides)
 Describe the common patterns to solve common problems. A pattern is a general reusable solution to a commonly occurring problem within a given context in software design.
@@ -167,7 +172,7 @@ They are categorized in three groups:
 * **Ubiquitous Language:** Define common terms with a common understanding and be constantly reused. Help the communication between Domain experts and the Development team.
 * **Architecture:** Application architecture seeks to build a bridge between business requirements and technical requirements by understanding use cases, and then finding ways to implement those use cases in the software.
 * **Facade:** Common pattern name used to identify a thin layer of code that wraps around other code to present a "friendly" interface/interaction.
-* **SOLID:** single responsibility, open-closed, Liskov substitution, interface segregation and dependency inversion. The intention is that these principles, when applied together, will make it more likely that a programmer will create a system that is easy to maintain and extend over time.
+* **SOLID:** The intention is that these principles, when applied together, will make it more likely that a programmer will create a system that is easy to maintain and extend over time.
 * **POCO:** Plain Old CLR Object. Identify an object as a simple object, as opposed to the complicated. Some benefits of POCO objects are:
   - Allows a simple storage mechanism for data, and simplifies serialization/passing data through layers.
   - Goes hand-in-hand with dependency injection, and the repository pattern.
