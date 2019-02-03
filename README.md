@@ -3,8 +3,22 @@ SOLID, DI, N-Tier, Logs, etc.
 
 # C# (C-Sharp) language
 
+* **Access Modifiers:**
+  - **public**: There are no restrictions on accessing public members.
+  - **private**: Accessible only within the body of the class or the struct in which they are declared.
+  - **protected**: Accessible within its class and by derived class instances.
+  - **internal**: Accessible only within files in the same assembly.
+
 * **Modifiers:**
-  - **virtual**: A method, property, indexer or event declaration can be overridden by any derived class. (Useful to support lazy loading with **Entity Framework**).  
+  - **const**: Specifies that the value of the field or the local variable cannot be modified.
+  - **readonly**: Declares a field that can only be assigned values as part of the declaration or in a constructor in the same class.
+  - **static**: A static member cannot be referenced through an instance. Instead, it is referenced through the type name. If this keyword is applied to a class, all the members of the class must be static **(Useful for sharing information in memory without the need to create instances)**.
+  - **partial**: Allow for the definition of a class, struct, or interface to be split into multiple files. **(Useful for extending functionalities)**
+  - **sealed**: Specifies that a class cannot be inherited. **(Useful for stricted libraries)**
+  - **abstract**: Indicates that a class is intended only to be a base class of other classes **(Useful to prevent direct instantiation of that class, only from derived class instances)**.
+  - **virtual**: A method, property, indexer or event declaration can be overridden by any derived class. **(Useful to support lazy loading with **Entity Framework**).**
+  - **override**: A new implementation of a virtual member inherited from a base class. **(Useful for modifying behaviors from some derived classes)**.
+  - **volatile**: Indicates that a field can be modified in the program by something such as the operating system, the hardware, or a concurrently executing thread.
 
 # Tools
 * **[ASP.NET Dynamic Data](https://msdn.microsoft.com/en-us/library/ee845452.aspx)**: Dynamic Data enables you to create a data-driven Web site with little or no coding (Only a simple CRUD).
