@@ -19,6 +19,25 @@ SOLID, DI, N-Tier, Logs, etc.
   - **virtual**: A method, property, indexer or event declaration can be overridden by any derived class. **(Useful to support lazy loading with **Entity Framework**).**
   - **override**: A new implementation of a virtual member inherited from a base class. **(Useful for modifying behaviors from some derived classes)**.
   - **volatile**: Indicates that a field can be modified in the program by something such as the operating system, the hardware, or a concurrently executing thread.
+  
+# Code
+```
+object.GetHashCode() // Unique identifier of each object
+
+// Predicates
+myList.RemoveAll(myPredicate);
+static bool myPredicate(CustomClass myObject) {
+  return myObject.myProperty == "some value";
+}
+
+// Delegates (Specify input and ouput parameters)
+Predicate<CustomClass> myPredicate = otherPredicate;
+```
+
+# Commands
+- `dotnet run`
+- `dotnet build`
+- `nuget restore`
 
 # Tools
 * **[ASP.NET Dynamic Data](https://msdn.microsoft.com/en-us/library/ee845452.aspx)**: Dynamic Data enables you to create a data-driven Web site with little or no coding (Only a simple CRUD).
