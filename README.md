@@ -22,6 +22,14 @@ SOLID, DI, N-Tier, Logs, etc with dotnet
   
 # Code Tips
 ```
+// Compare, later execute the next instruction to increment the counter
+while (quantity++ < 3){ Console.WriteLine("Quantity: " + quantity.toString()) }
+
+// Optional parameters
+static void MyMethod(string param1 = "a", string param2 = "b", string param3 = "c") {}
+MyMethod(param3: "other value");
+
+// Objects
 object.GetHashCode() // Unique identifier of each object
 
 // Predicates
@@ -36,6 +44,9 @@ Predicate<CustomClass> myPredicate = otherPredicate;
 myList.RemoveAll(delegate (CustomClass myObject) { 
   return myObject.myProperty == "some value";
 });
+
+// Lambda expressions (Useful to write local functions that can be passed as arguments or returned as the value of function calls)
+myList.RemoveAll((myObject) => myObject.myProperty == "some value");
 ```
 
 # Commands
