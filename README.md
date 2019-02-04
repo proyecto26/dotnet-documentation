@@ -20,7 +20,7 @@ SOLID, DI, N-Tier, Logs, etc.
   - **override**: A new implementation of a virtual member inherited from a base class. **(Useful for modifying behaviors from some derived classes)**.
   - **volatile**: Indicates that a field can be modified in the program by something such as the operating system, the hardware, or a concurrently executing thread.
   
-# Code
+# Code Tips
 ```
 object.GetHashCode() // Unique identifier of each object
 
@@ -30,8 +30,12 @@ static bool myPredicate(CustomClass myObject) {
   return myObject.myProperty == "some value";
 }
 
-// Delegates (Specify input and ouput parameters)
+// Delegates (Specify input and ouput parameters for the functions, useful for methods with the same logic)
 Predicate<CustomClass> myPredicate = otherPredicate;
+// Define a delegate directly
+myList.RemoveAll(delegate (CustomClass myObject) { 
+  return myObject.myProperty == "some value";
+});
 ```
 
 # Commands
