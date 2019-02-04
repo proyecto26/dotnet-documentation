@@ -1,5 +1,5 @@
-# .Net Starter Template (to whom it may concern)
-SOLID, DI, N-Tier, Logs, etc.
+# .Net Documentation
+SOLID, DI, N-Tier, Logs, etc with dotnet
 
 # C# (C-Sharp) language
 
@@ -222,3 +222,19 @@ They are categorized in three groups:
 * **SSDL:** Store Schema Definition Language.
 * **MSL:** Mapping Specification Language (Handle the mapping between the CSDL and SSDL). It was used in older versions of **EF**.
 * **T4:**  is the templating and code generation engine that **EF** uses to generate code. T4 text template files can often be identified by the **.tt** extension.
+
+## Collaborators 🥇
+[<img alt="jdnichollsc" src="https://avatars3.githubusercontent.com/u/2154886?v=3&s=117" width="117">](https://github.com/jdnichollsc)
+:---: |
+[Juan Nicholls](mailto:jdnichollsc@hotmail.com)
+
+## Supporting 🍻
+I believe in Unicorns 🦄
+Support [me](http://www.paypal.me/jdnichollsc/2), if you do too.
+
+## Happy coding 💯
+Made with ❤️
+
+<img width="150px" src="http://phaser.azurewebsites.net/assets/nicholls.png" align="right">
+
+To whom it may concern.
