@@ -49,9 +49,25 @@ myList.RemoveAll(delegate (CustomClass myObject) {
 myList.RemoveAll((myObject) => myObject.myProperty == "some value");
 
 // Interfaces (Useful to create the definition of common methods in different classes)
-var listByInterfaz = from obj in myList
-                     where obs i Interfaz
-                     select (Interfaz)obj;
+// Find objects with the same interfaces
+var listByIExample = from obj in myList
+                     where obs i IExample
+                     select (IExample)obj;
+                     
+// Tuple and ValueTuple (Useful to return multiple values with a single object)
+var unnamed = ("one", "two");
+var named = (first: "one", second: "two");
+(string frst, string sec)? nullableTuple = named;
+(named == nullableTuple); // true. Member names don't participate.
+static (int, string) MyValueTuple()
+{
+  var data = (years: 5, name: "dog");
+  data.years++;
+  return data;
+}
+// Also we have deconstructing
+(int count, double sum, double sumOfSquares) = ComputeSumAndSumOfSquares(sequence);
+var (sum, sumOfSquares, count) = ComputeSumAndSumOfSquares(sequence);
 
 ```
 
@@ -215,6 +231,7 @@ They are categorized in three groups:
   - **Iterator:** Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
 
 # Concepts
+* **Tuple:** is a data structure that contains a sequence of elements of different data types.
 * **Layers:** are about logical organization of code.
 * **Tiers:** are the physical deployment of layers (only about where the code runs).
 * **Cross-cutting concerns:** are aspects of a program that affect other concerns (Security, Communication, Operational Management, Handling, Logging, Validation, Instrumentation, etc).
