@@ -47,6 +47,12 @@ myList.RemoveAll(delegate (CustomClass myObject) {
 
 // Lambda expressions (Useful to write local functions that can be passed as arguments or returned as the value of function calls)
 myList.RemoveAll((myObject) => myObject.myProperty == "some value");
+
+// Interfaces (Useful to create the definition of common methods in different classes)
+var listByInterfaz = from obj in myList
+                     where obs i Interfaz
+                     select (Interfaz)obj;
+
 ```
 
 # Commands
