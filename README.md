@@ -21,31 +21,47 @@ SOLID, DI, N-Tier, Logs, etc with dotnet
   - **volatile**: Indicates that a field can be modified in the program by something such as the operating system, the hardware, or a concurrently executing thread.
   
 # Code Tips
-```
-// Compare, later execute the next instruction to increment the counter
-while (quantity++ < 3){ Console.WriteLine("Quantity: " + quantity.toString()) }
 
-// Optional parameters
+### The postfix `x++` and the prefix `++x` increment operators
+```
+int quantity = 0;
+// Compare and later execute the next instruction to increment the counter
+while (quantity++ < 3){ Console.WriteLine("Quantity: " + quantity.toString()) }
+Console.WriteLine(++quantity); // output: 4
+```
+
+### Optional parameters
+```
 static void MyMethod(string param1 = "a", string param2 = "b", string param3 = "c") {}
 MyMethod(param3: "other value");
+```
 
-// Objects
+### Objects
+```
 object.GetHashCode() // Unique identifier of each object
+```
 
-// Predicates
+### Predicates
+```
 myList.RemoveAll(myPredicate);
 static bool myPredicate(CustomClass myObject) {
   return myObject.myProperty == "some value";
 }
+```
 
-// Delegates (Specify input and ouput parameters for the functions, useful for methods with the same logic)
+### Delegates
+Specify input and ouput parameters for the functions, useful for methods with the same logic
+```
 Predicate<CustomClass> myPredicate = otherPredicate;
 // Define a delegate directly
 myList.RemoveAll(delegate (CustomClass myObject) { 
   return myObject.myProperty == "some value";
 });
-
-// Lambda expressions (Useful to write local functions that can be passed as arguments or returned as the value of function calls)
+```
+  
+### Lambda expressions
+Useful to write local functions that can be passed as arguments or returned as the value of function calls
+```
 myList.RemoveAll((myObject) => myObject.myProperty == "some value");
 
 // Interfaces (Useful to create the definition of common methods in different classes)
@@ -53,8 +69,11 @@ myList.RemoveAll((myObject) => myObject.myProperty == "some value");
 var listByIExample = from obj in myList
                      where obs i IExample
                      select (IExample)obj;
-                     
-// Tuple and ValueTuple (Useful to return multiple values with a single object)
+```
+
+### Tuple and ValueTuple
+Useful to return multiple values with a single object
+```
 var unnamed = ("one", "two");
 var named = (first: "one", second: "two");
 (string frst, string sec)? nullableTuple = named;
@@ -68,7 +87,6 @@ static (int, string) MyValueTuple()
 // Also we have deconstructing
 (int count, double sum, double sumOfSquares) = ComputeSumAndSumOfSquares(sequence);
 var (sum, sumOfSquares, count) = ComputeSumAndSumOfSquares(sequence);
-
 ```
 
 # Commands
