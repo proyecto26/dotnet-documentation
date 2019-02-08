@@ -89,15 +89,15 @@ var unnamed = ("one", "two");
 var named = (first: "one", second: "two");
 (string frst, string sec)? nullableTuple = named;
 (named == nullableTuple); // true. Member names don't participate.
-static (int, string) MyValueTuple()
+static (int, string) MyValueTupleMethod()
 {
   var data = (years: 5, name: "dog");
   data.years++;
   return data;
 }
-// Also we have deconstructing
-(int count, double sum, double sumOfSquares) = MyMethod();
-var (sum, sumOfSquares, count) = MyMethod();
+// And "deconstructing" feature:
+(int years, string name) = MyValueTupleMethod();
+var (years, name) = MyMethod();
 ```
 
 ### Read-only lists
