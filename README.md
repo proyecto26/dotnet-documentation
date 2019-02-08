@@ -36,6 +36,17 @@ static void MyMethod(string param1 = "a", string param2 = "b", string param3 = "
 MyMethod(param3: "other value");
 ```
 
+### Output parameters
+```
+static void MyMethod(out int param1, out int param2, string param3 = "undefined") {
+  //all output parameters must be assigned
+  if (param3 == "undefined") { param1 = 1; param2 = 1; }
+  else { param1 = 0; param2 = 0; }
+}
+int param1, param2;
+MyMethod(out param1, out param2); // param1: 1, param2: 1
+```
+
 ### Objects
 ```
 object.GetHashCode() // Unique identifier of each object
