@@ -96,8 +96,16 @@ static (int, string) MyValueTuple()
   return data;
 }
 // Also we have deconstructing
-(int count, double sum, double sumOfSquares) = ComputeSumAndSumOfSquares(sequence);
-var (sum, sumOfSquares, count) = ComputeSumAndSumOfSquares(sequence);
+(int count, double sum, double sumOfSquares) = MyMethod();
+var (sum, sumOfSquares, count) = MyMethod();
+```
+
+### Read-only lists
+A generic list type such as ÌEnumerable` is recommended, otherwise if it's for reading mode we have:
+```
+IReadOnlyList<CustomClass> GetMyReadOnlyList() { 
+  return myList.AsReadOnly();
+}
 ```
 
 # Commands
