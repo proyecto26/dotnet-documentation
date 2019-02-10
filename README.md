@@ -101,7 +101,7 @@ var (years, name) = MyMethod();
 ```
 
 ### Read-only lists
-A generic list type such as ÌEnumerable` is recommended, otherwise if it's for reading mode we have:
+A generic list type such as `IEnumerable` is recommended, otherwise if it's for reading mode we have:
 ```
 IReadOnlyList<CustomClass> GetMyReadOnlyList() { 
   return myList.AsReadOnly();
