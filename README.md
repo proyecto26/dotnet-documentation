@@ -275,6 +275,7 @@ They are categorized in three groups:
 * **DRY:** Don't repeat yourself. "Every piece of knowledge must have a single, unambiguous, authoritative representation within a system".
 * **SRP:** Single responsibility principle. Every module or class should have responsibility over a single part of the functionality provided by the software, and that responsibility should be entirely encapsulated by the class. "A class should have only one reason to change".
 * **YAGNI:** You aren't gonna need it. "Always implement things when you actually need them, never when you just foresee that you need them".
+* **KISS principle:** Keep it stupid simple. Simplicity should be a key goal in design, and unnecessary complexity should be avoided.
 * **TDD:** Test Driven Design.
 * **DDD:** Domain Driven Design.
 * **Ubiquitous Language:** Define common terms with a common understanding and be constantly reused. Help the communication between Domain experts and the Development team.
